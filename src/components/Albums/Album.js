@@ -1,12 +1,13 @@
-import React, {Component} from 'react';
+import React from 'react';
+
 import './style.css'
 
-class Photo extends Component {
+class Album extends Component {
   render() {
     const {title, thumbnailUrl} = this.props;
     return (
-      <div className='PhotoCard'>
-        <img className="image" src={thumbnailUrl} alt="Image is loading..." />
+      <div className='Album'>
+        <img className="image" src={thumbnailUrl} />
         <p className="textTitle">{title}</p>
       </div>
     )

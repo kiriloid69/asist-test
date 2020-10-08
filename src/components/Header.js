@@ -7,7 +7,6 @@ export default class Header extends Component {
     render() {
         return (
             <Router>
-                {/* <Link to="/">Posts</Link> */}
                 <ul className="Navigation">
                     <li>
                         <Link to="/">Posts</Link>

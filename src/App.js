@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Header from './components/Header';
 import Posts from './components/Posts/Posts';
 import Photos from './components/Photos/Photos';
-import Albums from './components/Albums';
+import Albums from './components/Albums/Albums';
 import {getData} from './API/get-action';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import './App.css';
@@ -43,9 +43,12 @@ class App extends Component {
                     <Header />
                     <Router>
                         <Route exact path="/" render={(props) => <Posts {...props} allPosts={this.state.allPosts} />} />
-                        <Route path="/photos" render={(props) => <Photos {...props} allPhotos={this.state.allPhotos} />}
+                        <Route
+                            exact
+                            path="/photos"
+                            render={(props) => <Photos {...props} allPhotos={this.state.allPhotos} />}
                         />
-                        <Route path="/albums" component={Albums} />
+                        <Route exact path="/albums" render={(props) => <Albums {...props} allAlbums={this.state.allAlbums} />} />
                     </Router>
                 </div>
             </div>
