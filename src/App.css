@@ -1,0 +1,32 @@
+.App {
+    background-color: #e3e3e3;
+    min-height: 100vh;
+}
+
+.Container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.Navigation {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 0;
+    text-align: center;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.12);
+}
+
+.Navigation li {
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    margin: 10px 30px;
+    font-size: 2em;
+}
+
+.Navigation li a {
+    text-decoration: none;
+    color: #242424;
+}
